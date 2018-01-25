@@ -1,0 +1,52 @@
+<div class="container">
+  <h1>{{name}}</h1>
+  <ul>
+    <li>Age: {{age}}</li>
+    <li>Email: {{email}}</li>
+    <li>Address: {{address.street}} {{address.city}} {{address.state}}</li>
+  </ul>
+
+  <button class="btn btn-primary" (click)="onclick()">Click Me!</button>
+
+  <h1>Edit User:</h1>
+  <form>
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="Name">
+    </div>
+    <div class="form-group">
+      <label for="age">Age</label>
+      <input type="text" class="form-control" [(ngModel)]="age" name="age" placeholder="Age">
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="text" class="form-control" [(ngModel)]="email" name="email" placeholder="Email">
+    </div>
+    <div class="form-group">
+      <label for="street">Street:</label>
+      <input type="text" class="form-control" [(ngModel)]="address.street" name="street" placeholder="Street">
+    </div>
+    <div class="form-group">
+      <label for="city">City:</label>
+      <input type="text" class="form-control" [(ngModel)]="address.city" name="city" placeholder="City">
+    </div>
+    <div class="form-group">
+      <label for="state">State:</label>
+      <input type="text" class="form-control" [(ngModel)]="address.state" name="state" placeholder="State">
+    </div>
+  </form>
+
+  <h1>Hobbies:</h1>
+  <form (click)="addHobby(hobby.value)">
+  <div class="form-group">
+    <label for="hobby">Add Hobbies:</label>
+    <input type="text" class="form-control" #hobby placeholder="Hobby">
+  </div>
+</form>
+  <ul>
+    <li *ngFor="let hobby of hobbies, let i = index">
+      {{i + 1}}: {{hobby}} <button (click)="deleteHobby(hobby)" class="btn btn-danger btn-xs">Delete</button>
+    </li>
+  </ul>
+
+</div>

@@ -1,0 +1,50 @@
+//////Angular Common Features and Terms\\\\\\\\\\
+
+Components - 
+
+Services - 
+
+Routing - 
+
+Testing - 
+
+Build Tools - 
+
+Data Binding - 
+
+Templating - 
+
+HTTP Module -
+
+Observables - 
+
+Forms Module - 
+
+Directives - 
+
+Pipes - 
+
+Events - 
+
+Animation - 
+
+Typescript -  Look Below!!
+
+What is Typescript - 
+ - Superset of Javascript with added Features
+ - Created By Microsoft
+ - Optional Static Typing
+ - Class based object-oriented programming
+ - Resembles languages like Java and C#
+
+ Method:
+ - Function within a Class
+
+ Constructor:
+ - A function or method that runs when you instantiate an object using the class. (It runs automatically)
+
+Installing Angular 4 
+- Angular CLI
+- Quickstart Seed
+(Dependencies)
+- Nodes.js & NPM
